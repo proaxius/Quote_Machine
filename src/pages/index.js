@@ -17,9 +17,7 @@ export default function Home() {
 setNewData(data)
    }
     fetchApi()
-
-  } 
-  
+  }   
   useEffect(()=>{
     newQuote()
   },[])
