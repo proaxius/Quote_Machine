@@ -29,29 +29,25 @@ setNewData(data)
     className={`flex flex-col h-screen place-items-center justify-center `}
     >
     
-    <div className='gap-10 flex justify-center items-center  flex-col bg-[#25222281] p-4 rounded-lg h-auto w-auto m-4'>
+    <div className='gap-10 flex justify-center items-center  flex-col bg-[#25222281] p-4 rounded-lg h-auto w-[70%] m-4' id="quote-box">
     {/*quote box element*/}
-    <div id="quote-box">
-    <div className='gap-10 flex justify-around '>
+   
+   
     
     {/*text element*/}
-    <TextRender id="text" quote={JSON.stringify(apiData.content)}/>
+    <text className='font-semibold  text-center' id="text">{JSON.stringify(apiData.content)}</text> 
     
     {/*author element*/}
-    <span> <AuthorRender id="author" author={JSON.stringify(apiData.author)}/> </span>
-    </div>
-    </div>
-    <div className='flex gap-10 items-center '>
-    <div >
+     <text className="font-extrabold" id="author">{JSON.stringify(apiData.author)}</text>  
+   
+  
     
     {/*Tweet element*/}
-    <a href={twitterLink}> <button id="tweet-quote" onClick={TweetQuote} > Tweet Quote</button></a>
-    </div>
-    <div>
+    <a href="twitter.com/intent/tweet" id="tweet-quote"> <button className=' outline-double outline-stone-300 p-3 rounded-lg' formTarget='_blank' onClick={TweetQuote} > Tweet Quote</button></a>
+   
     {/* New Quote element*/}
-    <button id="new-quote" onClick={newQuote}>New Quote</button>					
-    </div>
-    </div>
+    <button id="new-quote" className=' outline-double outline-stone-300 p-3 rounded-lg' onClick={newQuote}>New Quote</button>					
+   
             
             
           </div>
