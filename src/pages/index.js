@@ -7,7 +7,7 @@ import AuthorRender from './authorRender'
 const inter = Inter({ subsets: ['latin'] })
 let fetchedData = {}
 export default function Home() {
-  
+  const twitterLink = "twitter.com/intent/tweet";
   const [apiData , setNewData] = useState( " ")
   const newQuote =()=>{
 
@@ -21,32 +21,37 @@ setNewData(data)
   useEffect(()=>{
     newQuote()
   },[])
+  const TweetQuote =()=>{
+
+  }
   return (
     <main 
     className={`flex flex-col h-screen place-items-center justify-center `}
     >
     
-    <div className='gap-10 flex justify-center items-center  flex-col bg-[#25222281] p-4 rounded-lg h-[30vh] w-[50vw]'>
+    <div className='gap-10 flex justify-center items-center  flex-col bg-[#25222281] p-4 rounded-lg h-auto w-auto m-4'>
     {/*quote box element*/}
+    <div id="quote-box">
     <div className='gap-10 flex justify-around '>
     
     {/*text element*/}
-    <TextRender quote={JSON.stringify(apiData.content)}/>
+    <TextRender id="text" quote={JSON.stringify(apiData.content)}/>
     
     {/*author element*/}
-    <span> <AuthorRender author={JSON.stringify(apiData.author)}/> </span>
+    <span> <AuthorRender id="author" author={JSON.stringify(apiData.author)}/> </span>
     </div>
     </div>
-            <div className='flex gap-10 items-center '>
-            <div >
-            
-            {/*Tweet element*/}
-            <button > Tweet Quote</button>
-            </div>
-            <div>
-            {/* New Quote element*/}
-            <button onClick={newQuote}>New Quote</button>					
-            </div>
+    <div className='flex gap-10 items-center '>
+    <div >
+    
+    {/*Tweet element*/}
+    <a href={twitterLink}> <button id="tweet-quote" onClick={TweetQuote} > Tweet Quote</button></a>
+    </div>
+    <div>
+    {/* New Quote element*/}
+    <button id="new-quote" onClick={newQuote}>New Quote</button>					
+    </div>
+    </div>
             
             
           </div>
