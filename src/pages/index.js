@@ -1,7 +1,5 @@
 import { Inter } from 'next/font/google'
 import { useEffect, useState } from 'react'
-import TextRender from './TextRender'
-import AuthorRender from './authorRender'
 
 
 const inter = Inter({ subsets: ['latin'] })
