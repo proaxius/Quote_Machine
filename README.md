@@ -1,40 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### This Project Is Created for the Purpose of Freecodecamp frontendLib Coure Certification
 
-## Getting Started
+You can See The code and Also use the api that I used But I would recommend you to use Create a project of your own use the api its a open source ,
+And its a good practise to do also You might Learn a thing or so!
 
-First, run the development server:
+## About The Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Developed By Anurag (github.com/proaxius)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Purpose : FreeCodeCamp FrontEnd Library course certification
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Tools Used: Nextjs 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Css : Tailwindcss and Custom Css
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# COMMANDS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### INSTALL
 
-## Learn More
+git clone https://github.com/proaxius/Quote_Machine.git
 
-To learn more about Next.js, take a look at the following resources:
+cd {Type the Project Dir Name Here } ( yeah i know i could write the name , but this is for you script Kiddies)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## RUN
 
-## Deploy on Vercel
+::$copy this command=> npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### And thats all , I wanted to write  more but could not find anything more ! 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### And more or less I am just too lazy for that , And I hope you find a use for this .
